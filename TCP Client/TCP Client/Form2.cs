@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,12 +65,16 @@ namespace TCP_Client
             // wysyłanie listy liter i odbieranie jej
             string temp = textBox7.Text;
             Shared.writer.WriteLine(temp);
+            ArrayList list = new ArrayList();
             do
             {
                 temp = Shared.reader.ReadLine();
-                textBox2.Text = temp;
+                list.Add(temp);
             } while (temp != "-");
-           // textBox3.Text = Shared.reader.ReadLine();
+            for(int i = 0; i < list.Count; i++)
+            {
+                textBox2.Text += list[i];
+            }
 
         }
     }
