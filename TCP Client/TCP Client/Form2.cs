@@ -12,6 +12,8 @@ namespace TCP_Client
 {
     public partial class Form2 : Form
     {
+
+
         public Form2()
         {
             InitializeComponent();
@@ -20,9 +22,11 @@ namespace TCP_Client
         private void button3_Click(object sender, EventArgs e)
         {
             //wysyłanie do serwera, ze koniec logowania
-            Form1 f1 = new Form1();
-            f1.ShowDialog();
-            
+            Form oldForm = Program.appC.MainForm;
+            Program.appC.MainForm = new Form1();
+            Program.appC.MainForm.Show();
+            oldForm.Dispose();
+
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -9,3 +9,14 @@ D:\Studia\visual\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.GenerateResou
 D:\Studia\visual\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.CoreCompileInputs.cache
 D:\Studia\visual\TCP Client\TCP Client\obj\Debug\TCP Client.exe
 D:\Studia\visual\TCP Client\TCP Client\obj\Debug\TCP Client.pdb
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\bin\Debug\TCP Client.exe.config
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\bin\Debug\TCP Client.exe
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\bin\Debug\TCP Client.pdb
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.csprojAssemblyReference.cache
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP_Client.Form1.resources
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP_Client.Form2.resources
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP_Client.Properties.Resources.resources
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.GenerateResource.cache
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.CoreCompileInputs.cache
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.exe
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.pdb

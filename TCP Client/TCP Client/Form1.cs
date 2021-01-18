@@ -45,8 +45,10 @@ namespace TCP_Client
                     {
                         //recive
                         MessageBox.Show("Zalogowano!");
-                        Form2 f = new Form2();
-                        f.ShowDialog();
+                        Form oldForm = Program.appC.MainForm;
+                        Program.appC.MainForm = new Form2();
+                        Program.appC.MainForm.Show();
+                        oldForm.Dispose();
                     }
                     else
                     {

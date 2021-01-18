@@ -9,6 +9,7 @@ namespace TCP_Client
 {
     static class Program
     {
+        internal static ApplicationContext appC;
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
@@ -18,7 +19,8 @@ namespace TCP_Client
           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            appC = new ApplicationContext(new Form1()); 
+            Application.Run(appC);
         }
     }
 }
