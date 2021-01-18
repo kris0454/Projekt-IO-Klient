@@ -20,3 +20,6 @@ D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.G
 D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.CoreCompileInputs.cache
 D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.exe
 D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.pdb
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Studia\visual\Nowy folder\TCP Client\TCP Client\obj\Debug\TCP Client.csproj.CopyComplete

@@ -92,6 +92,7 @@
             this.textBox2.Location = new System.Drawing.Point(30, 233);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(178, 185);
             this.textBox2.TabIndex = 9;
             // 
@@ -129,6 +130,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(109, 147);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(173, 20);
             this.textBox7.TabIndex = 17;
             // 
@@ -156,6 +158,7 @@
             this.textBox3.Location = new System.Drawing.Point(217, 233);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 185);
             this.textBox3.TabIndex = 20;
             // 
