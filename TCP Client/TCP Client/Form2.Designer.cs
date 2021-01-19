@@ -93,8 +93,10 @@
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox2.Size = new System.Drawing.Size(178, 185);
             this.textBox2.TabIndex = 9;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
@@ -159,8 +161,10 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox3.Size = new System.Drawing.Size(100, 185);
             this.textBox3.TabIndex = 20;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form2
             // 

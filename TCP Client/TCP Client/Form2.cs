@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,7 +37,18 @@ namespace TCP_Client
         {
             if(textBox1.Text != "")
             {
-                textBox7.Text += textBox1.Text+", ";
+                string temp = textBox1.Text;
+                if (temp.Length > 1)
+                {
+                    for (int i = 0; i < temp.Length; i++)
+                    {
+                        textBox7.Text += temp[i] + ", ";
+                    }
+                }
+                else
+                {
+                    textBox7.Text += textBox1.Text + ", ";
+                }
                 textBox1.Clear();
             }
             else
@@ -63,17 +75,31 @@ namespace TCP_Client
         private void button4_Click(object sender, EventArgs e)
         {
             // wysyłanie listy liter i odbieranie jej
+            textBox2.Clear();
+            textBox3.Clear();
             string temp = textBox7.Text;
             Shared.writer.WriteLine(temp);
-            ArrayList list = new ArrayList();
+            ArrayList listslow = new ArrayList();
+            ArrayList listapunkt = new ArrayList();
             do
             {
                 temp = Shared.reader.ReadLine();
-                list.Add(temp);
+                listslow.Add(temp);
             } while (temp != "-");
-            for(int i = 0; i < list.Count; i++)
+            for(int i = 0; i < listslow.Count-1; i++)
             {
-                textBox2.Text += list[i];
+                temp = listslow[i] + "\r\n";
+                textBox2.Text += temp;
+            }
+            do
+            {
+                temp = Shared.reader.ReadLine();
+                listapunkt.Add(temp);
+            } while (temp != "-");
+            for (int i = 0; i < listapunkt.Count-1; i++)
+            {
+                temp = listapunkt[i] + "\r\n";
+                textBox3.Text += temp;
             }
 
         }

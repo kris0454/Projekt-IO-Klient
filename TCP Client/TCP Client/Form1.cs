@@ -28,38 +28,41 @@ namespace TCP_Client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != "")
-            {
-                if(textBox2.Text != "")
+            
+                if (textBox1.Text != "")
                 {
-                    //send
-                    string user = textBox1.Text;
-                    string pass = textBox2.Text;
-                    Shared.writer.WriteLine(user+";"+pass);
-                    string logged = Shared.reader.ReadLine();
-                    if (logged == "1")//tu powinno być odbieranie
+                    if (textBox2.Text != "")
                     {
-                        //recive
-                        MessageBox.Show("Zalogowano!");
-                        Form oldForm = Program.appC.MainForm;
-                        Program.appC.MainForm = new Form2();
-                        Program.appC.MainForm.Show();
-                        oldForm.Dispose();
+                        //send
+                        Shared.writer.WriteLine("0");
+                        string user = textBox1.Text;
+                        string pass = textBox2.Text;
+                        Shared.writer.WriteLine(user + ";" + pass);
+                        string logged = Shared.reader.ReadLine();
+                        if (logged == "1")//tu powinno być odbieranie
+                        {
+                            //recive
+                            MessageBox.Show("Zalogowano!");
+                            Form oldForm = Program.appC.MainForm;
+                            Program.appC.MainForm = new Form2();
+                            Program.appC.MainForm.Show();
+                            oldForm.Dispose();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Błędny login lub hasło.");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Błędny login lub hasło.");
+                        MessageBox.Show("Podaj hasło.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Podaj hasło.");
+                    MessageBox.Show("Podaj login.");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Podaj login.");
-            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -74,11 +77,20 @@ namespace TCP_Client
             {
                 if (textBox2.Text != "")
                 {
-                    //wysyłanie ,że info o nowym koncie
-                    if (true)//sprawdzanie czy istnieje
+                    Shared.writer.WriteLine("1");
+                    string user = textBox1.Text;
+                    string pass = textBox2.Text;
+                    Shared.writer.WriteLine(user + ";" + pass);
+                    string logged = Shared.reader.ReadLine();
+                    if (logged == "1")//tu powinno być odbieranie
                     {
+                        //recive
                         MessageBox.Show("Założono nowe konto!");
-                        // przejscie dalej czy trzeba się zalogować?
+                        Form oldForm = Program.appC.MainForm;
+                        Program.appC.MainForm = new Form2();
+                        Program.appC.MainForm.Show();
+                        oldForm.Dispose();
+
                     }
                     else
                     {
